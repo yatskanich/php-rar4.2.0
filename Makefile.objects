@@ -1,0 +1,180 @@
+-include rar.dep
+rar.lo: /var/www/html/rar-4.2.0/rar.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rar.c -o rar.lo  -MMD -MF rar.dep -MT rar.lo
+-include rar_error.dep
+rar_error.lo: /var/www/html/rar-4.2.0/rar_error.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rar_error.c -o rar_error.lo  -MMD -MF rar_error.dep -MT rar_error.lo
+-include rararch.dep
+rararch.lo: /var/www/html/rar-4.2.0/rararch.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rararch.c -o rararch.lo  -MMD -MF rararch.dep -MT rararch.lo
+-include rarentry.dep
+rarentry.lo: /var/www/html/rar-4.2.0/rarentry.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rarentry.c -o rarentry.lo  -MMD -MF rarentry.dep -MT rarentry.lo
+-include rar_stream.dep
+rar_stream.lo: /var/www/html/rar-4.2.0/rar_stream.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rar_stream.c -o rar_stream.lo  -MMD -MF rar_stream.dep -MT rar_stream.lo
+-include rar_navigation.dep
+rar_navigation.lo: /var/www/html/rar-4.2.0/rar_navigation.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rar_navigation.c -o rar_navigation.lo  -MMD -MF rar_navigation.dep -MT rar_navigation.lo
+-include rar_time.dep
+rar_time.lo: /var/www/html/rar-4.2.0/rar_time.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/rar_time.c -o rar_time.lo  -MMD -MF rar_time.dep -MT rar_time.lo
+-include unrar/sha256.dep
+unrar/sha256.lo: /var/www/html/rar-4.2.0/unrar/sha256.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/sha256.cpp -o unrar/sha256.lo  -MMD -MF unrar/sha256.dep -MT unrar/sha256.lo
+-include unrar/qopen.dep
+unrar/qopen.lo: /var/www/html/rar-4.2.0/unrar/qopen.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/qopen.cpp -o unrar/qopen.lo  -MMD -MF unrar/qopen.dep -MT unrar/qopen.lo
+-include unrar/blake2s.dep
+unrar/blake2s.lo: /var/www/html/rar-4.2.0/unrar/blake2s.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/blake2s.cpp -o unrar/blake2s.lo  -MMD -MF unrar/blake2s.dep -MT unrar/blake2s.lo
+-include unrar/recvol.dep
+unrar/recvol.lo: /var/www/html/rar-4.2.0/unrar/recvol.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/recvol.cpp -o unrar/recvol.lo  -MMD -MF unrar/recvol.dep -MT unrar/recvol.lo
+-include unrar/headers.dep
+unrar/headers.lo: /var/www/html/rar-4.2.0/unrar/headers.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/headers.cpp -o unrar/headers.lo  -MMD -MF unrar/headers.dep -MT unrar/headers.lo
+-include unrar/match.dep
+unrar/match.lo: /var/www/html/rar-4.2.0/unrar/match.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/match.cpp -o unrar/match.lo  -MMD -MF unrar/match.dep -MT unrar/match.lo
+-include unrar/find.dep
+unrar/find.lo: /var/www/html/rar-4.2.0/unrar/find.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/find.cpp -o unrar/find.lo  -MMD -MF unrar/find.dep -MT unrar/find.lo
+-include unrar/resource.dep
+unrar/resource.lo: /var/www/html/rar-4.2.0/unrar/resource.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/resource.cpp -o unrar/resource.lo  -MMD -MF unrar/resource.dep -MT unrar/resource.lo
+-include unrar/pathfn.dep
+unrar/pathfn.lo: /var/www/html/rar-4.2.0/unrar/pathfn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/pathfn.cpp -o unrar/pathfn.lo  -MMD -MF unrar/pathfn.dep -MT unrar/pathfn.lo
+-include unrar/dll.dep
+unrar/dll.lo: /var/www/html/rar-4.2.0/unrar/dll.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/dll.cpp -o unrar/dll.lo  -MMD -MF unrar/dll.dep -MT unrar/dll.lo
+-include unrar/threadpool.dep
+unrar/threadpool.lo: /var/www/html/rar-4.2.0/unrar/threadpool.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/threadpool.cpp -o unrar/threadpool.lo  -MMD -MF unrar/threadpool.dep -MT unrar/threadpool.lo
+-include unrar/volume.dep
+unrar/volume.lo: /var/www/html/rar-4.2.0/unrar/volume.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/volume.cpp -o unrar/volume.lo  -MMD -MF unrar/volume.dep -MT unrar/volume.lo
+-include unrar/unpack.dep
+unrar/unpack.lo: /var/www/html/rar-4.2.0/unrar/unpack.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/unpack.cpp -o unrar/unpack.lo  -MMD -MF unrar/unpack.dep -MT unrar/unpack.lo
+-include unrar/extract.dep
+unrar/extract.lo: /var/www/html/rar-4.2.0/unrar/extract.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/extract.cpp -o unrar/extract.lo  -MMD -MF unrar/extract.dep -MT unrar/extract.lo
+-include unrar/errhnd.dep
+unrar/errhnd.lo: /var/www/html/rar-4.2.0/unrar/errhnd.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/errhnd.cpp -o unrar/errhnd.lo  -MMD -MF unrar/errhnd.dep -MT unrar/errhnd.lo
+-include unrar/crc.dep
+unrar/crc.lo: /var/www/html/rar-4.2.0/unrar/crc.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/crc.cpp -o unrar/crc.lo  -MMD -MF unrar/crc.dep -MT unrar/crc.lo
+-include unrar/rijndael.dep
+unrar/rijndael.lo: /var/www/html/rar-4.2.0/unrar/rijndael.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rijndael.cpp -o unrar/rijndael.lo  -MMD -MF unrar/rijndael.dep -MT unrar/rijndael.lo
+-include unrar/crypt.dep
+unrar/crypt.lo: /var/www/html/rar-4.2.0/unrar/crypt.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/crypt.cpp -o unrar/crypt.lo  -MMD -MF unrar/crypt.dep -MT unrar/crypt.lo
+-include unrar/rawread.dep
+unrar/rawread.lo: /var/www/html/rar-4.2.0/unrar/rawread.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rawread.cpp -o unrar/rawread.lo  -MMD -MF unrar/rawread.dep -MT unrar/rawread.lo
+-include unrar/rs.dep
+unrar/rs.lo: /var/www/html/rar-4.2.0/unrar/rs.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rs.cpp -o unrar/rs.lo  -MMD -MF unrar/rs.dep -MT unrar/rs.lo
+-include unrar/smallfn.dep
+unrar/smallfn.lo: /var/www/html/rar-4.2.0/unrar/smallfn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/smallfn.cpp -o unrar/smallfn.lo  -MMD -MF unrar/smallfn.dep -MT unrar/smallfn.lo
+-include unrar/isnt.dep
+unrar/isnt.lo: /var/www/html/rar-4.2.0/unrar/isnt.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/isnt.cpp -o unrar/isnt.lo  -MMD -MF unrar/isnt.dep -MT unrar/isnt.lo
+-include unrar/rar.dep
+unrar/rar.lo: /var/www/html/rar-4.2.0/unrar/rar.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rar.cpp -o unrar/rar.lo  -MMD -MF unrar/rar.dep -MT unrar/rar.lo
+-include unrar/consio.dep
+unrar/consio.lo: /var/www/html/rar-4.2.0/unrar/consio.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/consio.cpp -o unrar/consio.lo  -MMD -MF unrar/consio.dep -MT unrar/consio.lo
+-include unrar/scantree.dep
+unrar/scantree.lo: /var/www/html/rar-4.2.0/unrar/scantree.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/scantree.cpp -o unrar/scantree.lo  -MMD -MF unrar/scantree.dep -MT unrar/scantree.lo
+-include unrar/archive.dep
+unrar/archive.lo: /var/www/html/rar-4.2.0/unrar/archive.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/archive.cpp -o unrar/archive.lo  -MMD -MF unrar/archive.dep -MT unrar/archive.lo
+-include unrar/strfn.dep
+unrar/strfn.lo: /var/www/html/rar-4.2.0/unrar/strfn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/strfn.cpp -o unrar/strfn.lo  -MMD -MF unrar/strfn.dep -MT unrar/strfn.lo
+-include unrar/strlist.dep
+unrar/strlist.lo: /var/www/html/rar-4.2.0/unrar/strlist.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/strlist.cpp -o unrar/strlist.lo  -MMD -MF unrar/strlist.dep -MT unrar/strlist.lo
+-include unrar/getbits.dep
+unrar/getbits.lo: /var/www/html/rar-4.2.0/unrar/getbits.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/getbits.cpp -o unrar/getbits.lo  -MMD -MF unrar/getbits.dep -MT unrar/getbits.lo
+-include unrar/hash.dep
+unrar/hash.lo: /var/www/html/rar-4.2.0/unrar/hash.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/hash.cpp -o unrar/hash.lo  -MMD -MF unrar/hash.dep -MT unrar/hash.lo
+-include unrar/filestr.dep
+unrar/filestr.lo: /var/www/html/rar-4.2.0/unrar/filestr.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/filestr.cpp -o unrar/filestr.lo  -MMD -MF unrar/filestr.dep -MT unrar/filestr.lo
+-include unrar/extinfo.dep
+unrar/extinfo.lo: /var/www/html/rar-4.2.0/unrar/extinfo.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/extinfo.cpp -o unrar/extinfo.lo  -MMD -MF unrar/extinfo.dep -MT unrar/extinfo.lo
+-include unrar/ui.dep
+unrar/ui.lo: /var/www/html/rar-4.2.0/unrar/ui.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/ui.cpp -o unrar/ui.lo  -MMD -MF unrar/ui.dep -MT unrar/ui.lo
+-include unrar/rarvm.dep
+unrar/rarvm.lo: /var/www/html/rar-4.2.0/unrar/rarvm.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rarvm.cpp -o unrar/rarvm.lo  -MMD -MF unrar/rarvm.dep -MT unrar/rarvm.lo
+-include unrar/timefn.dep
+unrar/timefn.lo: /var/www/html/rar-4.2.0/unrar/timefn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/timefn.cpp -o unrar/timefn.lo  -MMD -MF unrar/timefn.dep -MT unrar/timefn.lo
+-include unrar/sha1.dep
+unrar/sha1.lo: /var/www/html/rar-4.2.0/unrar/sha1.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/sha1.cpp -o unrar/sha1.lo  -MMD -MF unrar/sha1.dep -MT unrar/sha1.lo
+-include unrar/rdwrfn.dep
+unrar/rdwrfn.lo: /var/www/html/rar-4.2.0/unrar/rdwrfn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rdwrfn.cpp -o unrar/rdwrfn.lo  -MMD -MF unrar/rdwrfn.dep -MT unrar/rdwrfn.lo
+-include unrar/rs16.dep
+unrar/rs16.lo: /var/www/html/rar-4.2.0/unrar/rs16.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/rs16.cpp -o unrar/rs16.lo  -MMD -MF unrar/rs16.dep -MT unrar/rs16.lo
+-include unrar/cmddata.dep
+unrar/cmddata.lo: /var/www/html/rar-4.2.0/unrar/cmddata.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/cmddata.cpp -o unrar/cmddata.lo  -MMD -MF unrar/cmddata.dep -MT unrar/cmddata.lo
+-include unrar/extractchunk.dep
+unrar/extractchunk.lo: /var/www/html/rar-4.2.0/unrar/extractchunk.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/extractchunk.cpp -o unrar/extractchunk.lo  -MMD -MF unrar/extractchunk.dep -MT unrar/extractchunk.lo
+-include unrar/system.dep
+unrar/system.lo: /var/www/html/rar-4.2.0/unrar/system.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/system.cpp -o unrar/system.lo  -MMD -MF unrar/system.dep -MT unrar/system.lo
+-include unrar/unicode.dep
+unrar/unicode.lo: /var/www/html/rar-4.2.0/unrar/unicode.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/unicode.cpp -o unrar/unicode.lo  -MMD -MF unrar/unicode.dep -MT unrar/unicode.lo
+-include unrar/filcreat.dep
+unrar/filcreat.lo: /var/www/html/rar-4.2.0/unrar/filcreat.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/filcreat.cpp -o unrar/filcreat.lo  -MMD -MF unrar/filcreat.dep -MT unrar/filcreat.lo
+-include unrar/arcread.dep
+unrar/arcread.lo: /var/www/html/rar-4.2.0/unrar/arcread.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/arcread.cpp -o unrar/arcread.lo  -MMD -MF unrar/arcread.dep -MT unrar/arcread.lo
+-include unrar/filefn.dep
+unrar/filefn.lo: /var/www/html/rar-4.2.0/unrar/filefn.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/filefn.cpp -o unrar/filefn.lo  -MMD -MF unrar/filefn.dep -MT unrar/filefn.lo
+-include unrar/global.dep
+unrar/global.lo: /var/www/html/rar-4.2.0/unrar/global.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/global.cpp -o unrar/global.lo  -MMD -MF unrar/global.dep -MT unrar/global.lo
+-include unrar/list.dep
+unrar/list.lo: /var/www/html/rar-4.2.0/unrar/list.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/list.cpp -o unrar/list.lo  -MMD -MF unrar/list.dep -MT unrar/list.lo
+-include unrar/encname.dep
+unrar/encname.lo: /var/www/html/rar-4.2.0/unrar/encname.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/encname.cpp -o unrar/encname.lo  -MMD -MF unrar/encname.dep -MT unrar/encname.lo
+-include unrar/file.dep
+unrar/file.lo: /var/www/html/rar-4.2.0/unrar/file.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/file.cpp -o unrar/file.lo  -MMD -MF unrar/file.dep -MT unrar/file.lo
+-include unrar/secpassword.dep
+unrar/secpassword.lo: /var/www/html/rar-4.2.0/unrar/secpassword.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/secpassword.cpp -o unrar/secpassword.lo  -MMD -MF unrar/secpassword.dep -MT unrar/secpassword.lo
+-include unrar/options.dep
+unrar/options.lo: /var/www/html/rar-4.2.0/unrar/options.cpp
+	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) -I. -I/var/www/html/rar-4.2.0 $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -DRARDLL -DSILENT -Wno-write-strings -Wall -fvisibility=hidden -I/var/www/html/rar-4.2.0/unrar -DZEND_COMPILE_DL_EXT=1 -c /var/www/html/rar-4.2.0/unrar/options.cpp -o unrar/options.lo  -MMD -MF unrar/options.dep -MT unrar/options.lo
+$(phplibdir)/rar.la: ./rar.la
+	$(LIBTOOL) --tag=CC --mode=install cp ./rar.la $(phplibdir)
+
+./rar.la: $(shared_objects_rar) $(RAR_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --tag=CC --mode=link $(CC) -shared $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS)  -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_rar) $(RAR_SHARED_LIBADD)
+

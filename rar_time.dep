@@ -1,0 +1,7 @@
+rar_time.lo: /var/www/html/rar-4.2.0/rar_time.c \
+ /var/www/html/rar-4.2.0/php_rar.h /var/www/html/rar-4.2.0/php_compat.h \
+ /var/www/html/rar-4.2.0/unrar/raros.hpp \
+ /var/www/html/rar-4.2.0/unrar/rartypes.hpp \
+ /var/www/html/rar-4.2.0/unrar/os.hpp \
+ /var/www/html/rar-4.2.0/unrar/dll.hpp \
+ /var/www/html/rar-4.2.0/unrar/version.hpp
